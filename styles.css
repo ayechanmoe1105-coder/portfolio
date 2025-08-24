@@ -220,11 +220,12 @@ nav {
 
 .about-content {
     display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 3rem;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .about-text {
@@ -245,13 +246,13 @@ nav {
 }
 
 .profile-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 12px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
     object-fit: cover;
     object-position: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border: 3px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
     transition: all 0.3s ease;
     margin: 0 auto;
 }
