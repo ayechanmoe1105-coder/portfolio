@@ -242,17 +242,20 @@ nav {
     justify-content: center;
 }
 
-.image-placeholder {
+.profile-photo {
     width: 350px;
     height: 350px;
-    background: #dbeafe;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-weight: 600;
-    box-shadow: var(--box-shadow);
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+    transition: all 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Skills Section */
