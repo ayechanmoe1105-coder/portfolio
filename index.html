@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="tagline">Your Profession/Title</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm a passionate [Your Profession] with experience in [Your Skills/Expertise]. I love creating beautiful and functional solutions that make a difference.</p>
+                <p>When I'm not coding/designing, you can find me [Your Hobbies/Interests].</p>
+            </div>
+            <div class="about-image">
+                <!-- Add your image here -->
+                <div class="image-placeholder">Your Photo</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>jQuery</li>
+                    <li>Responsive Design</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>PHP (OOP, PDO)</li>
+                    <li>MySQL Database</li>
+                    <li>RESTful APIs</li>
+                    <li>Authentication & Security</li>
+                    <li>Form Validation</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>XAMPP / WAMP</li>
+                    <li>phpMyAdmin</li>
+                    <li>JSON & AJAX</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in-up">
+                <div class="project-image" style="background: #e0f2fe;">
+                    <i class="fas fa-book" style="font-size: 3rem; color: #2563eb;"></i>
+                </div>
+                <h3>Library Management System</h3>
+                <p>A comprehensive system for managing library operations including book tracking, member management, and loan processing. Built with PHP, MySQL, HTML, CSS, and JavaScript with features like user authentication, book search, and report generation.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card fade-in-up">
+                <div class="project-image" style="background: #f0fdf4;">
+                    <i class="fas fa-shopping-cart" style="font-size: 3rem; color: #16a34a;"></i>
+                </div>
+                <h3>E-commerce Platform</h3>
+                <p>Full-featured online shopping platform with product catalog, shopping cart, user authentication, and order management. Built with PHP, MySQL, HTML, CSS, and JavaScript, featuring responsive design and secure payment processing.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card fade-in-up">
+                <div class="project-image" style="background: #fef3c7;">
+                    <i class="fas fa-plane-departure" style="font-size: 3rem; color: #d97706;"></i>
+                </div>
+                <h3>Travel Booking System</h3>
+                <p>An online platform for booking flights, hotels, and vacation packages. Features include real-time availability, user reviews, and booking management. Built with PHP, MySQL, HTML, CSS, and JavaScript with AJAX for seamless user experience.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
