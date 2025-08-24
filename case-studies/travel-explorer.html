@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer - Case Study | Aye Chan Moe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .case-study-hero {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            color: white;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-study-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 0.8;
+        }
+
+        .case-study-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .case-study-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .meta-item i {
+            font-size: 1.2rem;
+        }
+
+        .case-study-content {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 3rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            color: #92400e;
+            margin: 3rem 0 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #f59e0b;
+            border-radius: 2px;
+        }
+
+        .project-screenshot {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+            transition: transform 0.3s ease;
+        }
+
+        .project-screenshot:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #fffbeb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .feature-card h4 {
+            margin-top: 0;
+            color: #92400e;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1.5rem 0;
+        }
+
+        .tech-item {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+            padding: 3rem 2rem;
+            background: #fffbeb;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-hero {
+                padding: 5rem 1rem 3rem;
+            }
+            
+            .case-study-content {
+                padding: 2rem 1.5rem;
+                margin: -2rem 1rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <header class="case-study-hero">
+        <div class="case-study-container">
+            <h1>Travel Explorer</h1>
+            <p class="tagline">Comprehensive Travel Booking Platform</p>
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <i class="far fa-calendar"></i>
+                    <span>Completed: July 2025</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Category: Web Application</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Role: Full Stack Developer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="case-study-container">
+        <article class="case-study-content">
+            <img src="https://placehold.co/1200x600/d97706/ffffff?text=Travel+Explorer" alt="Travel Explorer Booking Platform" class="project-screenshot">
+            
+            <h2 class="section-title">Project Overview</h2>
+            <p>Travel Explorer is a comprehensive travel booking platform that allows users to search, compare, and book flights, hotels, and vacation packages. The platform provides a seamless user experience with real-time availability, secure payment processing, and personalized recommendations.</p>
+            
+            <h2 class="section-title">The Challenge</h2>
+            <p>The travel industry demands a robust platform that can handle complex booking logic, real-time availability, and secure transactions. Key challenges included:</p>
+            <ul>
+                <li>Integrating with multiple third-party APIs for flight and hotel data</li>
+                <li>Implementing real-time availability and pricing</li>
+                <li>Creating an intuitive search and booking flow</li>
+                <li>Ensuring data security for sensitive user information</li>
+                <li>Optimizing performance for a smooth user experience</li>
+            </ul>
+
+            <h2 class="section-title">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Multi-Destination Search</h4>
+                    <p>Advanced search functionality allowing users to search for flights, hotels, and packages across multiple destinations with various filters.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Real-time Availability</h4>
+                    <p>Integration with multiple providers to show up-to-date availability and pricing information.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>User Accounts</h4>
+                    <p>Secure user authentication with booking history, saved searches, and personalized recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Booking Management</h4>
+                    <p>Comprehensive booking system with confirmation emails, e-tickets, and the ability to modify or cancel reservations.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Admin Dashboard</h4>
+                    <p>Powerful admin interface for managing bookings, users, and content with role-based access control.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Responsive Design</h4>
+                    <p>Fully responsive interface that works perfectly on all devices, from desktops to smartphones.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Technical Implementation</h2>
+            <p>The platform was built with a focus on performance, security, and scalability:</p>
+            
+            <div class="tech-stack">
+                <span class="tech-item">PHP 8.1</span>
+                <span class="tech-item">MySQL</span>
+                <span class="tech-item">JavaScript (ES6+)</span>
+                <span class="tech-item">AJAX</span>
+                <span class="tech-item">Bootstrap 5</span>
+                <span class="tech-item">RESTful APIs</span>
+                <span class="tech-item">jQuery</span>
+                <span class="tech-item">MVC Architecture</span>
+            </div>
+
+            <h3>API Integrations</h3>
+            <ul>
+                <li>Flight booking API for real-time flight search and booking</li>
+                <li>Hotel booking API for hotel availability and reservations</li>
+                <li>Payment gateway integration for secure transactions</li>
+                <li>Weather API for destination information</li>
+                <li>Google Maps API for location services</li>
+            </ul>
+
+            <h3>Security Measures</h3>
+            <ul>
+                <li>SSL encryption for all data transmission</li>
+                <li>Secure payment processing with PCI compliance</li>
+                <li>Regular security audits and updates</li>
+                <li>Data encryption for sensitive information</li>
+                <li>CSRF protection and input validation</li>
+            </ul>
+
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <h3>Challenge 1: Real-time Data Synchronization</h3>
+            <p><strong>Problem:</strong> Keeping flight and hotel availability in sync across multiple providers.</p>
+            <p><strong>Solution:</strong> Implemented a caching system with automatic refresh and fallback mechanisms to ensure data accuracy.</p>
+            
+            <h3>Challenge 2: Complex Booking Logic</h3>
+            <p><strong>Problem:</strong> Handling complex booking rules, cancellations, and modifications.</p>
+            <p><strong>Solution:</strong> Developed a robust booking engine with clear rules and automated processes for handling various scenarios.</p>
+
+            <h2 class="section-title">Results & Impact</h2>
+            <p>Travel Explorer has transformed the way users plan and book their travel:</p>
+            <ul>
+                <li>30% increase in booking completion rate</li>
+                <li>25% improvement in page load speed</li>
+                <li>Reduced server response time by 40%</li>
+                <li>Positive user feedback on the intuitive interface</li>
+            </ul>
+
+            <div class="cta-section">
+                <h3>Interested in this project?</h3>
+                <p>Check out the code on GitHub or contact me to learn more about my development process.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="https://github.com/ayechanmoe1105-coder/travelexplorer" target="_blank" class="btn" style="margin-right: 1rem; background: #d97706; border-color: #d97706;">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="../index.html#contact" class="btn btn-secondary" style="color: #d97706; border-color: #d97706;">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer style="background: #1e293b; color: white; padding: 2rem 0; text-align: center; margin-top: 4rem;">
+        <p>&copy; 2025 Aye Chan Moe. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

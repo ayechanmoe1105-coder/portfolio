@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Case Study | Aye Chan Moe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .case-study-hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-study-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 0.8;
+        }
+
+        .case-study-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .case-study-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .meta-item i {
+            font-size: 1.2rem;
+        }
+
+        .case-study-content {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 3rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            color: #1e40af;
+            margin: 3rem 0 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+
+        .project-screenshot {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+            transition: transform 0.3s ease;
+        }
+
+        .project-screenshot:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .feature-card h4 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1.5rem 0;
+        }
+
+        .tech-item {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+            padding: 3rem 2rem;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-hero {
+                padding: 5rem 1rem 3rem;
+            }
+            
+            .case-study-content {
+                padding: 2rem 1.5rem;
+                margin: -2rem 1rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <header class="case-study-hero">
+        <div class="case-study-container">
+            <h1>Library Management System</h1>
+            <p class="tagline">A comprehensive solution for modern library operations</p>
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <i class="far fa-calendar"></i>
+                    <span>Completed: December 2024</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Category: Web Application</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Role: Full Stack Developer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="case-study-container">
+        <article class="case-study-content">
+            <img src="https://placehold.co/1200x600/2563eb/ffffff?text=Library+Management+Dashboard" alt="Library Management System Dashboard" class="project-screenshot">
+            
+            <h2 class="section-title">Project Overview</h2>
+            <p>The Library Management System is a comprehensive web application designed to streamline library operations. It provides librarians with powerful tools to manage books, members, and loans efficiently, while offering patrons an intuitive interface to browse and reserve books.</p>
+            
+            <h2 class="section-title">The Challenge</h2>
+            <p>Traditional library management systems often suffer from outdated interfaces, limited accessibility, and inefficient workflows. The goal was to create a modern, user-friendly solution that would:</p>
+            <ul>
+                <li>Simplify book inventory management</li>
+                <li>Streamline the book lending and return process</li>
+                <li>Provide real-time availability status</li>
+                <li>Generate comprehensive reports</li>
+                <li>Offer a user-friendly interface for both staff and patrons</li>
+            </ul>
+
+            <h2 class="section-title">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Book Management</h4>
+                    <p>Add, edit, and manage book details including title, author, ISBN, and availability status with cover images and categorization.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Member Management</h4>
+                    <p>Maintain member records, track borrowing history, and manage memberships with automated notifications for due dates.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Loan System</h4>
+                    <p>Efficiently handle book checkouts, returns, and renewals with automated fine calculations for late returns.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Search & Discovery</h4>
+                    <p>Advanced search functionality with filters for title, author, category, and availability status.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Reporting</h4>
+                    <p>Generate reports on book circulation, overdue items, popular titles, and member activity.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>User Authentication</h4>
+                    <p>Secure login system with role-based access control for administrators, librarians, and members.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Technical Implementation</h2>
+            <p>The application was built using a modern tech stack to ensure performance, security, and maintainability:</p>
+            
+            <div class="tech-stack">
+                <span class="tech-item">PHP 8.1</span>
+                <span class="tech-item">MySQL</span>
+                <span class="tech-item">JavaScript (ES6+)</span>
+                <span class="tech-item">jQuery</span>
+                <span class="tech-item">Bootstrap 5</span>
+                <span class="tech-item">AJAX</span>
+                <span class="tech-item">RESTful API</span>
+                <span class="tech-item">MVC Architecture</span>
+            </div>
+
+            <h3>Database Design</h3>
+            <p>The database was carefully designed to ensure data integrity and efficient querying. Key tables include:</p>
+            <ul>
+                <li><strong>books</strong>: Stores book information and inventory</li>
+                <li><strong>members</strong>: Manages library member details</li>
+                <li><strong>loans</strong>: Tracks book checkouts and returns</li>
+                <li><strong>categories</strong>: Organizes books by category</li>
+                <li><strong>users</strong>: Handles staff authentication</li>
+            </ul>
+
+            <h3>Security Measures</h3>
+            <ul>
+                <li>Prepared statements to prevent SQL injection</li>
+                <li>Password hashing using PHP's password_hash()</li>
+                <li>CSRF protection for forms</li>
+                <li>Input validation and sanitization</li>
+                <li>Session management with proper timeouts</li>
+            </ul>
+
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <h3>Challenge 1: Real-time Availability</h3>
+            <p><strong>Problem:</strong> Ensuring accurate book availability across multiple concurrent users.</p>
+            <p><strong>Solution:</strong> Implemented database transactions and row-level locking to handle concurrent checkouts and prevent over-borrowing.</p>
+            
+            <h3>Challenge 2: Performance Optimization</h3>
+            <p><strong>Problem:</strong> Slow search performance with large book inventories.</p>
+            <p><strong>Solution:</strong> Added full-text search indexes and implemented pagination to improve query performance.</p>
+
+            <h2 class="section-title">Results & Impact</h2>
+            <p>The Library Management System has significantly improved operational efficiency:</p>
+            <ul>
+                <li>Reduced book check-in/out time by 60%</li>
+                <li>Eliminated manual record-keeping errors</li>
+                <li>Improved member satisfaction with self-service features</li>
+                <li>Enabled data-driven decision making through comprehensive reporting</li>
+            </ul>
+
+            <div class="cta-section">
+                <h3>Interested in this project?</h3>
+                <p>Check out the code on GitHub or contact me to learn more about my development process.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="https://github.com/ayechanmoe1105-coder/libararymanagementsystem" target="_blank" class="btn" style="margin-right: 1rem;">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="../index.html#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer style="background: #1e293b; color: white; padding: 2rem 0; text-align: center; margin-top: 4rem;">
+        <p>&copy; 2025 Aye Chan Moe. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

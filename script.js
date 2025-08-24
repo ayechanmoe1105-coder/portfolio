@@ -51,9 +51,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Update current year in footer
-const year = new Date().getFullYear();
-document.getElementById('year').textContent = year;
 
 // Form submission
 const contactForm = document.getElementById('contact-form');
